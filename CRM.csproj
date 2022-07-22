@@ -49,6 +49,42 @@
     <Compile Include="Modelo\DbConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\ctrlMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\ctrlMenu.Designer.cs">
+      <DependentUpon>ctrlMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ctrlMenuHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\ctrlMenuHome.Designer.cs">
+      <DependentUpon>ctrlMenuHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmABMClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmABMClientes.Designer.cs">
+      <DependentUpon>frmABMClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmBClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmBClientes.Designer.cs">
+      <DependentUpon>frmBClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmExportarDatosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmExportarDatosClientes.Designer.cs">
+      <DependentUpon>frmExportarDatosClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,9 +105,22 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vista\ctrlMenu.resx">
+      <DependentUpon>ctrlMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ctrlMenuHome.resx">
+      <DependentUpon>ctrlMenuHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmABMClientes.resx">
+      <DependentUpon>frmABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +137,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controlador\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cliente_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarCliente_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configuracion_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

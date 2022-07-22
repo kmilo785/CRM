@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CRM.Vista
 {
-    public partial class frmMain : Form
+    public partial class frmBClientes : Form
     {
-        public frmMain()
+        public frmBClientes()
         {
             InitializeComponent();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

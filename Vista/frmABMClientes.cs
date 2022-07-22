@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CRM.Vista
 {
-    public partial class frmMain : Form
+    public partial class frmABMClientes : Form
     {
-        public frmMain()
+        public frmABMClientes()
         {
             InitializeComponent();
         }
