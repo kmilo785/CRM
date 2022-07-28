@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace CRM.Vista
 {
-    public partial class frmMain : Form
+    public partial class ctrlMenu : UserControl
     {
-        public frmMain()
+        public ctrlMenu()
         {
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void btnClientes_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmABMClientes frmClientes = new frmABMClientes();
+            frmClientes.ShowDialog();
         }
     }
 }

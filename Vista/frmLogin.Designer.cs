@@ -46,7 +46,6 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-           
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
@@ -64,6 +63,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(218, 27);
             this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // lblUsuario
             // 
@@ -88,7 +88,9 @@
             this.txtContrasenia.Location = new System.Drawing.Point(229, 125);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Size = new System.Drawing.Size(218, 27);
-            this.txtContrasenia.TabIndex = 1;
+            this.txtContrasenia.TabIndex = 2;
+            this.txtContrasenia.UseSystemPasswordChar = true;
+            this.txtContrasenia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenia_KeyPress);
             // 
             // btnAceptar
             // 
@@ -99,7 +101,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(457, 187);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(116, 36);
-            this.btnAceptar.TabIndex = 2;
+            this.btnAceptar.TabIndex = 3;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -114,7 +116,7 @@
             this.btnSalir.Location = new System.Drawing.Point(558, 0);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(35, 36);
-            this.btnSalir.TabIndex = 2;
+            this.btnSalir.TabIndex = 4;
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 

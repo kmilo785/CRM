@@ -33,7 +33,29 @@ namespace CRM
         {
             //TODO
 
+           VerificoUsuario();
 
+           
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                txtContrasenia.Focus();
+            }
+        }
+
+        private void txtContrasenia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                VerificoUsuario();
+            }
+        }
+
+        private void VerificoUsuario()
+        {
             string query = "SELECT Id, Usuario,Nombre, Password, Privilegio FROM Acceso_Usuario WHERE Usuario = @Usuario";
 
             using (SqlConnection conn = new SqlConnection(dbcon.conn_str))
@@ -88,5 +110,7 @@ namespace CRM
                 }
             }
         }
+
+       
     }
 }
