@@ -136,7 +136,7 @@ namespace CRM.Vista
         {
             txtNombre.Clear();
             txtCelular.Clear();
-            cbOrigen.SelectedItem = 1;
+            cbOrigen.SelectedItem = 0;
             cbEstados.SelectedItem = 7;
             txtDireccion.Clear();
             txtTelefono.Clear();
@@ -191,7 +191,7 @@ namespace CRM.Vista
                 txtTipoPlan.Enabled = true;
                 dtFechaNacimiento.Enabled = true;
                 txtComentarios.Enabled = true;
-                panel1.Enabled = true;
+
 
                 btnGuardar.Visible = true;
                 btnEditar.Visible = false;
@@ -211,7 +211,7 @@ namespace CRM.Vista
                 txtTipoPlan.Enabled = false;
                 dtFechaNacimiento.Enabled = false;
                 txtComentarios.Enabled = false;
-                panel1.Enabled = false;
+
             }
 
         }
@@ -321,60 +321,59 @@ namespace CRM.Vista
             }
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            habilitar = false;
-            FormatoControles();
-            btnEditar.Visible = true;
+        //private void btnBuscar_Click(object sender, EventArgs e)
+        //{
+        //    habilitar = false;
+        //    FormatoControles();
+        //    btnEditar.Visible = true;
 
-            try
-            {
-                // String cusID = dtgrid1.CurrentRow.Cells[0].Value.ToString();
-                String cusID = txtID.Text;
+        //    try
+        //    {
+        //        // String cusID = dtgrid1.CurrentRow.Cells[0].Value.ToString();
+        //        String cusID = txtID.Text;
 
-                BOCustomer thisCus = new BOCustomer();
+        //        BOCustomer thisCus = new BOCustomer();
 
-                DataSet ds = thisCus.Find(cusID);
+        //        DataSet ds = thisCus.Find(cusID);
 
-                DataRow row;
-                row = ds.Tables[0].Rows[0];
+        //        DataRow row;
+        //        row = ds.Tables[0].Rows[0];
 
-                foreach (DataRow rows in ds.Tables[0].Rows)
-                {
-                    cus = new BOCustomer();
+        //        foreach (DataRow rows in ds.Tables[0].Rows)
+        //        {
+        //            cus = new BOCustomer();
 
-                    txtID.Text = rows["CID"].ToString();
-                    txtNombre.Text = rows["Customer_Name"].ToString();
-                    txtCelular.Text = rows["MOBILE"].ToString();
-                    txtDireccion.Text = rows["Street_Name"].ToString();
-                    txtCiudad.Text = rows["City"].ToString();
-                    txtEmail.Text = rows["EMAIL"].ToString();
-                    txtTelefono.Text = rows["Land_Number"].ToString();
-                    txtTipoPlan.Text = rows["Product"].ToString();
-                    txtComentarios.Text = rows["Cus_Coment"].ToString();
-                    txtFechaIngreso.Text = rows["FIngreso"].ToString();
-                    dtFechaNacimiento.Text = rows["FNAC"].ToString();
+        //            txtID.Text = rows["CID"].ToString();
+        //            txtNombre.Text = rows["Customer_Name"].ToString();
+        //            txtCelular.Text = rows["MOBILE"].ToString();
+        //            txtDireccion.Text = rows["Street_Name"].ToString();
+        //            txtCiudad.Text = rows["City"].ToString();
+        //            txtEmail.Text = rows["EMAIL"].ToString();
+        //            txtTelefono.Text = rows["Land_Number"].ToString();
+        //            txtTipoPlan.Text = rows["Product"].ToString();
+        //            txtComentarios.Text = rows["Cus_Coment"].ToString();
+        //            txtFechaIngreso.Text = rows["FIngreso"].ToString();
+        //            dtFechaNacimiento.Text = rows["FNAC"].ToString();
 
-                    if (rows["Estado"].ToString() == "Sin Contacto") { rbSinContacto.Checked = true; }
-                    else if (rows["Estado"].ToString() == "Eliminado") { rbEliminado.Checked = true; }
-                    else if (rows["Estado"].ToString() == "Stand By") { rbStandBy.Checked = true; }
-                    else if (rows["Estado"].ToString() == "Vendido") { rbVendido.Checked = true; }
-                    else if (rows["Estado"].ToString() == "En Gestión") { rbEnGestion.Checked = true; }
-                    else if (rows["Estado"].ToString() == "Llamar Despues") { rbLlamarDespues.Checked = true; }
+        //            if (rows["Estado"].ToString() == "Sin Contacto") { rbSinContacto.Checked = true; }
+        //            else if (rows["Estado"].ToString() == "Eliminado") { rbEliminado.Checked = true; }
+        //            else if (rows["Estado"].ToString() == "Stand By") { rbStandBy.Checked = true; }
+        //            else if (rows["Estado"].ToString() == "Vendido") { rbVendido.Checked = true; }
+        //            else if (rows["Estado"].ToString() == "En Gestión") { rbEnGestion.Checked = true; }
+        //            else if (rows["Estado"].ToString() == "Llamar Despues") { rbLlamarDespues.Checked = true; }
 
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-            }
-        }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message.ToString());
+        //    }
+        //}
 
-        private void btnclear_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarControles();
-            //dtgrid1.Refresh();
-            //dtgrid1.Rows.Clear();
+
             habilitar = false;
             FormatoControles();
         }
@@ -464,6 +463,7 @@ namespace CRM.Vista
 
                 MessageBox.Show("Cliente Eliminado", "Cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                LimpiarControles();
             }
             catch (Exception ex)
             {

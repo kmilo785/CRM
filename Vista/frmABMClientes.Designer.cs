@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmABMClientes));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.gbEstados = new System.Windows.Forms.GroupBox();
             this.rbLlamarDespues = new System.Windows.Forms.RadioButton();
             this.rbEnGestion = new System.Windows.Forms.RadioButton();
@@ -66,13 +71,8 @@
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
-            this.ctrlMenuHome = new CRM.Vista.ctrlMenuHome();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.ctrlMenuHome = new CRM.Vista.ctrlMenuHome();
             this.panel1.SuspendLayout();
             this.gbEstados.SuspendLayout();
             this.gbComentarios.SuspendLayout();
@@ -119,6 +119,88 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(811, 554);
             this.panel1.TabIndex = 1;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Image = global::CRM.Properties.Resources.Trash_16;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(678, 494);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(92, 30);
+            this.btnEliminar.TabIndex = 28;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnLimpiar.Image = global::CRM.Properties.Resources.Limpiar_16;
+            this.btnLimpiar.Location = new System.Drawing.Point(338, 494);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(92, 30);
+            this.btnLimpiar.TabIndex = 28;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnEditar.Image = global::CRM.Properties.Resources.Edit_16;
+            this.btnEditar.Location = new System.Drawing.Point(186, 494);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(92, 30);
+            this.btnEditar.TabIndex = 28;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnGuardar.Image = global::CRM.Properties.Resources.Save_16;
+            this.btnGuardar.Location = new System.Drawing.Point(34, 494);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(92, 30);
+            this.btnGuardar.TabIndex = 28;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Visible = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
+            this.btnNuevo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnNuevo.Image = global::CRM.Properties.Resources.Cliente_16;
+            this.btnNuevo.Location = new System.Drawing.Point(34, 494);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(86, 30);
+            this.btnNuevo.TabIndex = 28;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // gbEstados
             // 
@@ -298,6 +380,7 @@
             this.txtFechaIngreso.Name = "txtFechaIngreso";
             this.txtFechaIngreso.Size = new System.Drawing.Size(208, 15);
             this.txtFechaIngreso.TabIndex = 10;
+            this.txtFechaIngreso.Visible = false;
             // 
             // txtID
             // 
@@ -367,7 +450,7 @@
             this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtNombre.Location = new System.Drawing.Point(168, 83);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(208, 15);
@@ -504,94 +587,7 @@
             this.lblID.Size = new System.Drawing.Size(20, 17);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID";
-            // 
-            // ctrlMenuHome
-            // 
-            this.ctrlMenuHome.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ctrlMenuHome.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlMenuHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ctrlMenuHome.Location = new System.Drawing.Point(0, 0);
-            this.ctrlMenuHome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ctrlMenuHome.Name = "ctrlMenuHome";
-            this.ctrlMenuHome.Size = new System.Drawing.Size(180, 554);
-            this.ctrlMenuHome.TabIndex = 0;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Image = global::CRM.Properties.Resources.Trash_16;
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(678, 494);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(92, 30);
-            this.btnEliminar.TabIndex = 28;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnLimpiar.Image = global::CRM.Properties.Resources.Limpiar_16;
-            this.btnLimpiar.Location = new System.Drawing.Point(338, 494);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(92, 30);
-            this.btnLimpiar.TabIndex = 28;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnEditar.Image = global::CRM.Properties.Resources.Edit_16;
-            this.btnEditar.Location = new System.Drawing.Point(186, 494);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(92, 30);
-            this.btnEditar.TabIndex = 28;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnGuardar.Image = global::CRM.Properties.Resources.Save_16;
-            this.btnGuardar.Location = new System.Drawing.Point(34, 494);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(92, 30);
-            this.btnGuardar.TabIndex = 28;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Visible = false;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(54)))), ((int)(((byte)(97)))));
-            this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnNuevo.Image = global::CRM.Properties.Resources.Cliente_16;
-            this.btnNuevo.Location = new System.Drawing.Point(34, 494);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 30);
-            this.btnNuevo.TabIndex = 28;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.lblID.Visible = false;
             // 
             // btnSalir
             // 
@@ -607,6 +603,17 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // ctrlMenuHome
+            // 
+            this.ctrlMenuHome.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ctrlMenuHome.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctrlMenuHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ctrlMenuHome.Location = new System.Drawing.Point(0, 0);
+            this.ctrlMenuHome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ctrlMenuHome.Name = "ctrlMenuHome";
+            this.ctrlMenuHome.Size = new System.Drawing.Size(180, 554);
+            this.ctrlMenuHome.TabIndex = 0;
+            // 
             // frmABMClientes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -621,6 +628,7 @@
             this.Name = "frmABMClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmABMClientes";
+            this.Load += new System.EventHandler(this.frmABMClientes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gbEstados.ResumeLayout(false);

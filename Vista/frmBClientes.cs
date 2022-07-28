@@ -193,8 +193,9 @@ namespace CRM.Vista
         private void dtGrid1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             String cusID = dtGrid1.CurrentRow.Cells[0].Value.ToString();
-            Form frm = new frmABMClientes(cusID);
             this.Close();
+            Form frm = new frmABMClientes(cusID);
+           
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
