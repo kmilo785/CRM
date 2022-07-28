@@ -202,6 +202,7 @@ namespace CRM.Vista
             txtNombre.Text = "";
             txtCelular.Text = "";
             BuscaEstados();
+
         }
     }
 }
