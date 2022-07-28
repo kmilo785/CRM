@@ -62,7 +62,7 @@
             this.btnConfiguracion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfiguracion.Image = global::CRM.Properties.Resources.Configuracion_32;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracion.Location = new System.Drawing.Point(0, 489);
+            this.btnConfiguracion.Location = new System.Drawing.Point(0, 492);
             this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(180, 62);

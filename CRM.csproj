@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\BOCustomer.cs" />
+    <Compile Include="Controlador\BOEstado.cs" />
+    <Compile Include="Controlador\BOOrigenDato.cs" />
+    <Compile Include="Modelo\DACustomer.cs" />
+    <Compile Include="Modelo\DAEstado.cs" />
+    <Compile Include="Modelo\DAOrigenDato.cs" />
+    <Compile Include="Modelo\DataSet1.Designer.cs" />
     <Compile Include="Modelo\DbConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +67,12 @@
     </Compile>
     <Compile Include="Vista\ctrlMenuHome.Designer.cs">
       <DependentUpon>ctrlMenuHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ctrlRadiobuttons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\ctrlRadiobuttons.Designer.cs">
+      <DependentUpon>ctrlRadiobuttons.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\frmABMClientes.cs">
       <SubType>Form</SubType>
@@ -113,8 +126,14 @@
     <EmbeddedResource Include="Vista\ctrlMenuHome.resx">
       <DependentUpon>ctrlMenuHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ctrlRadiobuttons.resx">
+      <DependentUpon>ctrlRadiobuttons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmABMClientes.resx">
       <DependentUpon>frmABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmBClientes.resx">
+      <DependentUpon>frmBClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -136,7 +155,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controlador\" />
+    <None Include="Resources\Limpiar_16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cliente_32.png" />
@@ -155,6 +174,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Home_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limpiar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cliente_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarCliente_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

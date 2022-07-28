@@ -46,7 +46,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(5);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(180, 554);
             this.pnlMenu.TabIndex = 1;
@@ -79,7 +79,7 @@
             this.btnExportar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportar.Image = global::CRM.Properties.Resources.Excel_32;
             this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportar.Location = new System.Drawing.Point(0, 211);
+            this.btnExportar.Location = new System.Drawing.Point(0, 240);
             this.btnExportar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(180, 62);
@@ -98,7 +98,7 @@
             this.btnBClientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBClientes.Image = global::CRM.Properties.Resources.BuscarCliente_32;
             this.btnBClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBClientes.Location = new System.Drawing.Point(0, 127);
+            this.btnBClientes.Location = new System.Drawing.Point(0, 156);
             this.btnBClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBClientes.Name = "btnBClientes";
             this.btnBClientes.Size = new System.Drawing.Size(180, 62);
@@ -117,7 +117,7 @@
             this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.Image = global::CRM.Properties.Resources.Cliente_32;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 43);
+            this.btnClientes.Location = new System.Drawing.Point(0, 72);
             this.btnClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(180, 62);
